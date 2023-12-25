@@ -35,7 +35,7 @@ const breadthFirstSearch = (bucketX, bucketY, target) => {
         /*
         In each iteration of the while loop, the first element is extracted from the queue using 
         the shift() function and is assigned to the variable h -> head. If the queue is empty, 
-        yhe variable u will be undefined.
+        the variable (h) will be undefined.
         */
         let h = queue.shift(); 
 
@@ -59,7 +59,7 @@ const breadthFirstSearch = (bucketX, bucketY, target) => {
 
         /*
         Check if the target has been reached, i.e. if the amount of water in the bucket has been 
-        reached X (h[0]) or in the cube Y (h[1]) equals the target. If the goal has been reached, 
+        reached cube X (h[0]) or in the cube Y (h[1]) equals the target. If the goal has been reached, 
         the isSolvable variable is set to true.
         */
         if (h[0] == target || h[1] == target) {
