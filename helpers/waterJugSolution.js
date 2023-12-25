@@ -58,9 +58,8 @@ const breadthFirstSearch = (bucketX, bucketY, target) => {
         nodeRe[h] = 1;
 
         /*
-        Check if the target has been reached, i.e. if the amount of water in the bucket has been 
-        reached cube X (h[0]) or in the cube Y (h[1]) equals the target. If the goal has been reached, 
-        the isSolvable variable is set to true.
+        Check if the target has been reached, i.e. if the amount of water in the bucket cube X (h[0]) equals 
+        the target or in the cube Y (h[1]) equals the target the isSolvable variable is set to true.
         */
         if (h[0] == target || h[1] == target) {
             isSolvable = true;
