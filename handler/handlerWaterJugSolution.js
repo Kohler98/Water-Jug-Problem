@@ -26,11 +26,11 @@ const breadthFirstSearch = (bucketX, bucketY, target) => {
     const movement = {} // returns the movement made (empty, transfer,fill).
     const queue = [];// It is a queue used to store the nodes that need to be explored.
     const solution = [] //It is an array used to store the found solution.
-
     queue.push([0, 0]);//The initial node [0, 0] is added to queue (queue).
-
-
+    
+    
     while (queue.length > 0) {// runs in a loop as long as the queue is not empty
+
 
         /*
         In each iteration of the while loop, the first element is extracted from the queue using 
@@ -61,9 +61,9 @@ const breadthFirstSearch = (bucketX, bucketY, target) => {
         Check if the target has been reached, i.e. if the amount of water in the bucket cube X (h[0]) equals 
         the target or in the cube Y (h[1]) equals the target the isSolvable variable is set to true.
         */
-        if (h[0] == target || h[1] == target) {
-            isSolvable = true;
+       if (h[0] == target || h[1] == target) {
  
+            isSolvable = true;
             bfsSolution(nodeMap,h,solution,movement)
       
             /*
